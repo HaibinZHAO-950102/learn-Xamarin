@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Griddemo.MainPage">
+
+    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="phonenumber" Text="1234" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Grid.Row="0" Grid.ColumnSpan="3"></Label>
+
+        <Button x:Name="button1" Text="1" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked"
+                Grid.Row="1" Grid.Column="0"></Button>
+
+        <Button x:Name="button2" Text="2" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked"
+                Grid.Row="1" Grid.Column="1"></Button>
+
+        <Button x:Name="button3" Text="3" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked"
+                Grid.Row="1" Grid.Column="2"></Button>
+
+        <Button x:Name="button4" Text="4" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked" 
+                Grid.Row="2" Grid.Column="0"></Button>
+
+        <Button x:Name="button5" Text="5" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked"
+                Grid.Row="2" Grid.Column="1"></Button>
+
+        <Button x:Name="button6" Text="6" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked"
+                Grid.Row="2" Grid.Column="2"></Button>
+
+        <Button x:Name="button7" Text="7" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked"
+                Grid.Row="3" Grid.Column="0"></Button>
+
+        <Button x:Name="button8" Text="8" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked"
+                Grid.Row="3" Grid.Column="1"></Button>
+
+        <Button x:Name="button9" Text="9" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked"
+                Grid.Row="3" Grid.Column="2"></Button>
+
+        <Button x:Name="button0" Text="0" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked"
+                Grid.Row="4" Grid.Column="1"></Button>
+
+        <Button x:Name="buttonl" Text="L" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked_Delete"
+                Grid.Row="4" Grid.Column="2"></Button>
+
+        <Button x:Name="buttonc" Text="C" FontAttributes="Bold" HorizontalOptions="Center"
+                VerticalOptions="Center" Clicked="Handle_Clicked_Calling"
+                Grid.Row="4" Grid.Column="0"></Button>
+        
+
+    </Grid>
+
+</ContentPage>

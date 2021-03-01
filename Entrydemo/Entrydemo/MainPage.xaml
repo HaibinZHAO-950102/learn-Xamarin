@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             Padding="20"
+             x:Class="Entrydemo.MainPage">
+
+    <StackLayout>
+        <Label x:Name="Text1" Text="Text Hier"></Label>
+        <Entry Placeholder="Chat"
+               Keyboard="Chat"
+               IsPassword="True"
+               TextChanged="Entry_TextChanged">
+        </Entry>
+        <Entry Placeholder="Default"
+               Keyboard="Default"
+               Completed="Entry_Completed">
+        </Entry>
+        <Entry Placeholder="Email"
+               Keyboard="Email"></Entry>
+        <Entry Placeholder="Numeric"
+               Keyboard="Numeric"></Entry>
+        <Entry Placeholder="Plain"
+               Keyboard="Plain"></Entry>
+        <Entry Placeholder="Telephone"
+               Keyboard="Telephone"></Entry>
+        <Entry Placeholder="Text"
+               Keyboard="Text"></Entry>
+        <Entry Placeholder="Url"
+               Keyboard="Url"></Entry>
+    </StackLayout>
+
+</ContentPage>

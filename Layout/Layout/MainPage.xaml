@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Padding="20"
+             BackgroundColor="#4664AA"
+             x:Class="Layout.MainPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS = "0, 20, 0, 0"
+                    Android = "0">
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <StackLayout
+            Orientation="Vertical"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Spacing="10">
+
+            <Label Text="Welcome to Xamarin"
+                   HorizontalOptions="Center"
+                   TextColor="White"
+                   FontSize="20">
+            </Label>
+
+            <Label Text="I am Haibin"
+                   HorizontalOptions="Center"
+                   TextColor="White"
+                   FontSize="15"
+                   Opacity="0.5">
+            </Label>
+
+            <Button Text="Log in"
+                    BackgroundColor="#009682"
+                    TextColor="White">
+            </Button>
+
+            <Button Text="Registration"
+                    BackgroundColor="#009682"
+                    TextColor="White">
+            </Button>
+
+        <BoxView
+            HeightRequest="1" BackgroundColor="Gray">
+        </BoxView>
+
+    </StackLayout>
+
+    
+
+</ContentPage>

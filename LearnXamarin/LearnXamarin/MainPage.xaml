@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnXamarin.MainPage">
+    <StackLayout BindingContext="{x:Reference slider1}" VerticalOptions="Center">
+        <Label x:Name="Label1"
+               Text="{Binding Path=Value, StringFormat= 'Value is {0:F2}'}"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+        </Label>
+
+        <Label x:Name="Label2"
+               Text="This is Text 2."
+               Opacity="{Binding Path=Value}"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+        </Label>
+
+        <Slider x:Name="slider1"
+                Maximum="1">
+        </Slider>
+    </StackLayout>
+    
+</ContentPage>
